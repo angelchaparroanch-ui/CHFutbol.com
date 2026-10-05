@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CH Fútbol - Descargar app</title>
+<style>
+  :root { --bg:#0f172a; --card:#1e293b; --green:#22c55e; --text:#f1f5f9; --muted:#94a3b8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--text);
+         min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .wrap { width:100%; max-width:440px; text-align:center; }
+  .logo { width:84px; height:84px; margin:0 auto 16px; border-radius:22px; background:var(--green);
+          display:flex; align-items:center; justify-content:center; font-size:44px; }
+  h1 { font-size:2rem; color:var(--green); letter-spacing:1px; }
+  .sub { color:var(--muted); margin:8px 0 24px; line-height:1.5; }
+  .btn { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:16px;
+         background:var(--green); color:#000; font-weight:700; font-size:1.1rem; border-radius:14px;
+         text-decoration:none; transition:transform .1s, filter .2s; }
+  .btn:hover { filter:brightness(1.1); }
+  .btn:active { transform:scale(.98); }
+  .meta { color:var(--muted); font-size:.8rem; margin-top:10px; }
+  .card { background:var(--card); border-radius:14px; padding:18px; margin-top:24px; text-align:left; }
+  .card h2 { font-size:1rem; color:var(--green); margin-bottom:10px; }
+  .card ol { padding-left:20px; color:var(--muted); font-size:.92rem; line-height:1.7; }
+  .features { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:24px; }
+  .features span { background:var(--card); padding:6px 12px; border-radius:20px; font-size:.8rem; color:var(--muted); }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="logo">⚽</div>
+    <h1>CH FÚTBOL</h1>
+    <p class="sub">Marcadores en vivo, ligas, selecciones, equipos y jugadores en tu bolsillo.</p>
+
+    <div class="features">
+      <span>🔴 En vivo</span><span>🔍 Buscador</span><span>⭐ Favoritos</span><span>🏆 Ligas</span>
+    </div>
+
+    <!-- Para cambiar el APK en el futuro, solo cambia el nombre del archivo en href -->
+    <a class="btn" href="ch-futbol.apk" download="CH_Futbol.apk">⬇ Descargar APK</a>
+    <p class="meta">Versión 1.0 · Android · 20 MB aprox.</p>
+
+    <section class="card">
+      <h2>Cómo instalarla</h2>
+      <ol>
+        <li>Toca <b>Descargar APK</b> desde tu celular Android.</li>
+        <li>Abre el archivo descargado.</li>
+        <li>Si te lo pide, permite <b>instalar apps de orígenes desconocidos</b> para tu navegador.</li>
+        <li>Toca <b>Instalar</b> y abre CH Fútbol.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
